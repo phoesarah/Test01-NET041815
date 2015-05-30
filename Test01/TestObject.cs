@@ -11,26 +11,26 @@ namespace Test01
         {
             List<int> result = new List<int>();
 
-            if (input.Count > 5)
-            {
-                for (int i = 0; i < 5; i++)
-                {
+            //if (input.Count > 5)
+            //{
+            //    for (int i = 0; i < 5; i++)
+            //    {
 
-                    {
-                        result.Add(input[i]);
-                    }
-                }
-            }
-            else
-                for (int i = 0; i < input.Count; i++)
-                {
+            //        {
+            //            result.Add(input[i]);
+            //        }
+            //    }
+            //}
+            //else
+            //    for (int i = 0; i < input.Count; i++)
+            //    {
 
-                    {
-                        result.Add(input[i]);
-                    }
-                }
+            //        {
+            //            result.Add(input[i]);
+            //        }
+            //    }
                         
-            result = result.Where(x => x >= 4 && x < 10).Distinct().ToList();
+            result = input.Take(5).Where(x => x >= 4 && x < 10).Distinct().ToList();
            
 
             //for (int i = 0; i < 5; i++)
