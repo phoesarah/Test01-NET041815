@@ -9,7 +9,29 @@ namespace Test01
     {
         internal List<int> Reduce(List<int> input)
         {
-            throw new NotImplementedException();
+            List<int> result = new List<int>();
+            for (int i = 0; i < 5; i++)
+            {
+                if ((input[i] >= 4) && (input[i] <10))
+                {
+                  
+                    result.Add(input[i]);
+                }
+                               
+            }
+
+            //for (int i = 0; i < result.Count; i++)
+            //{
+            //    if ((input[i] >= 4) && (input[i] < 10))
+            //    {
+
+            //        result.Add(input[i]);
+            //    }
+
+            //}
+            return result;
         }
+
+        
     }
 }
